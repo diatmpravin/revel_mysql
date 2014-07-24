@@ -16,7 +16,7 @@
   <div class="row">
     <div class="span6">
       {{template "flash.html" .}}
-      <form action="/App/Hello" method="GET">
+      <form action="/App/Index" method="GET">
 	      {{with $field := field "myName" .}}
 		      <input type="text" name="{{$field.Name}}" value="{{$field.Flash}}"/><br/>
 	      {{end}}
